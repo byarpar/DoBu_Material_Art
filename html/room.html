@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="okok.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style>
+        body{
+
+        background: #000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container" style="margin-left : 3%; max-width:100%;">
+      <div class="search-wrapper">
+        <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+        </div>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+      </div>
+      <div class="contact-info ">
+        <div class="contact-info">
+          <div class="contact-info">
+            <div class="phone-info">
+              <a href="https://wa.me/1234567890">
+                <img src="imgs/o6.png" alt="WhatsApp Call Icon">
+              </a>
+              <span>09770386642</span>
+            </div>
+          </div>
+        </div>
+        <div class="location-info">
+          <a href="https://maps.google.com/maps?q=123%20Main%20Street,%20City,%20Country" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/o7.png" alt="Location Icon">
+          </a>
+          <span>123 𝙈𝙖𝙞𝙣 𝙎𝙩𝙧𝙚𝙚𝙩, 𝘾𝙞𝙩𝙮, 𝘾𝙤𝙪𝙣𝙩𝙧𝙮</span>
+        </div>
+      </div>
+      <div class="location-info">
+        <a href="signup.html" target="_blank" rel="noopener noreferrer">
+          <img src="imgs/logo.png" alt="Location Icon">
+        </a>
+        <span>𝓢𝓲𝓰𝓷 𝓤𝓹</span>
+      </div>
+    </div>
+
+
+    <div class="container" >
+      <div class="logo">
+        <img src="imgs/ok.png" alt="Dobu Logo">
+        <h1>» 𝔴ᵉᒪⒸᵒ𝓂€ 𝓽𝓞 Đ𝕆𝓫𝓊 м𝕒ᖇ𝓉𝐢𝓪𝕝 ÃяⓉ𝓢! «</h1>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="#">𝓗𝓞𝓜𝓔</a>
+          <ul class="dropdown-content">
+            <li><a href="main2.html">𝓢𝓒𝓗𝓔𝓓𝓤𝓛𝓔</a></li>
+            <li><a href="#">𝓒𝓞𝓝𝓣𝓐𝓒𝓣</a></li>
+          </ul>
+        </li>
+        <li><a href="main1.html">𝓒𝓛𝓐𝓢𝓢𝓔𝓢</a></li>
+        <li><a href="main3.html">𝓘𝓝𝓢𝓣𝓡𝓤𝓒𝓣𝓞𝓡𝓢</a></li>
+        <li><a href="specia4l.html">𝓜𝓔𝓜𝓑𝓔𝓡𝓢𝓗𝓘𝓟𝓢</a></li>
+        <li class="dropdown">
+          <a href="#">𝓜𝓞𝓡𝓔</a>
+          <ul class="dropdown-content">
+            <li><a href="#">𝓑𝓛𝓞𝓖</a></li>
+            <li><a href="#">𝓐𝓑𝓞𝓤𝓣</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/your_facebook_page_url" target="_blank">
+        <img src="imgs/o1.png" alt="facebook">
+      </a>
+      <a href="https://twitter.com/i/flow/login" target="_blank">
+        <img src="imgs/o2.png" alt="twitter">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="imgs/03.png" alt="instagram">
+      </a>
+      <a href="https://www.google.com/" target="_blank">
+        <img src="imgs/o4.png" alt="google">
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+<div id="container">
+
+  <div class="product-details">
+
+    <h1>MartialFusion Fitness Lab</h1>
+    <span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+    <p class="information">Experience the fusion of martial arts and fitness like never before at our cutting-edge MartialFusion Fitness Lab. </p>
+
+    <div class="control">
+      <span class="price">$20</span>
+      <a href="signup.html"><button class="btn">Book Now</button></a>
+
+    </div>
+
+  </div>
+
+  <div class="product-image">
+
+    <img src="imgs/rom.png" alt="">
+
+
+  </div>
+</div>
+
+<div id="container">
+
+  <div class="product-details">
+
+    <h1>ZenWarrior Fitness Hub</h1>
+    <span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+    <p class="information">Discover balance and strength at ZenWarrior Fitness Hub, a sanctuary where martial arts and fitness seamlessly merge. </p>
+
+    <div class="control">
+      <span class="price">$50</span>
+      <a href="signup.html"><button class="btn">Book Now</button></a>
+
+
+    </div>
+
+  </div>
+
+  <div class="product-image">
+
+    <img src="imgs/rom2.png" alt="">
+
+
+
+  </div>
+
+
+
+</div>
+
+<div id="container">
+
+  <div class="product-details">
+
+      <h1>CombatCore Gym:</h1>
+    <span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+    <p class="information">At CombatCore Gym, we fuse martial arts precision with fitness excellence. </p>
+
+    <div class="control">
+
+      <span class="price">$250</span>
+      <a href="signup.html"><button class="btn">Book Now</button></a>
+
+
+    </div>
+
+  </div>
+
+  <div class="product-image">
+
+    <img src="imgs/rom4.png" alt="">
+  </div>
+
+
+
+</div>
+<header>
+  <div class="container">
+    <h1>𝓖𝓮𝓽 𝓪𝓵𝓵 𝓽𝓱𝓮 𝓼𝓹𝓮𝓬𝓲𝓪𝓵 𝓸𝓯𝓯𝓮𝓻𝓼
+      𝓫𝔂 𝓼𝓲𝓰𝓷𝓲𝓷𝓰 𝓾𝓹 𝓯𝓸𝓻 𝓪 𝓷𝓮𝔀𝓼𝓵𝓮𝓽𝓽𝓮𝓻!</h1>
+    <form id="subscribe-form">
+      <input type="email" id="email-input" placeholder="Enter your email" required>
+      <button type="submit" id="subscribe-btn">Subscribe</button>
+    </form>
+    <p id="success-message">Thank you for subscribing!</p>
+  </div>
+
+</header>
+<div class="container-fluid  text-white p-3" style="background: rgb(45, 51, 46);">
+  <div class="row justify-content-around text-center text-md-start">
+    <div class="col-md-2 text-center">
+      <a href="#" class="logo" style="color: white; font-size: 20px;"><img src="imgs/ok.png" width="90px"></a>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2">𝓞𝓤𝓡 𝓓𝓞𝓒𝓤𝓜𝓔𝓝𝓣𝓢</li>
+        <li> <a href="policy.html" class="text-decoration-none text-white">𝓟𝓻𝓲𝓿𝓪𝓬𝔂 𝓟𝓸𝓵𝓲𝓬𝔂</a> </li>
+        <li> <a href="policy.html" class="text-decoration-none text-white">𝓘𝓷𝓯𝓸𝓻𝓶𝓪𝓽𝓲𝓸𝓷 𝓦𝓮 𝓒𝓸𝓵𝓵𝓮𝓬𝓽:</a> </li>
+        <li> <a href="policy.html" class="text-decoration-none text-white">𝓒𝓱𝓲𝓵𝓭𝓻𝓮𝓷'𝓼 𝓟𝓻𝓲𝓿𝓪𝓬𝔂:</a> </li>
+
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2">𝓝𝓐𝓥𝓘𝓖𝓐𝑇𝓘𝓞𝓝</li>
+        <li> <a href="privacy.html" class="text-decoration-none text-white">𝓐𝓑𝓞𝓤𝓣</a> </li>
+        <li> <a href="specia4l.html" class="text-decoration-none text-white">𝓒𝓛𝓐𝓢𝓢𝓔𝓢</a> </li>
+        <li> <a href="main3.html" class="text-decoration-none text-white">𝓘𝓝𝓢𝓣𝓡𝓤𝓒𝓣𝓞𝓡𝓢</a> </li>
+        <li> <a href="main1.html" class="text-decoration-none text-white">𝓜𝓔𝓜𝓑𝓔𝓡𝓢𝓗𝓘𝓟𝓢</a> </li>
+        <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓒𝓗𝓔𝓓𝓤𝓛𝓔</a> </li>
+        <li> <a href="dobu.html" class="text-decoration-none text-white">𝓕𝓐𝓒𝓘𝓛𝓘𝓣𝓘𝓔𝓢</a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2">𝓒𝓞𝓝𝓣𝓐𝓒𝓣 𝓘𝓝𝓕𝓞</li>
+        <li> <a href="contact.html" class="text-decoration-none text-white">096 𝓝 𝓗𝓲𝓰𝓱𝓵𝓪𝓷𝓭 𝓢𝓽, 𝓐𝓻𝓵𝓲𝓷𝓰𝓽𝓸𝓷
+          𝓥𝓐 32101, 𝓤𝓢𝓐</a> </li>
+        <li> <a href="contact.html" class="text-decoration-none text-white">𝓽𝓸𝔂𝓸𝓾23@𝓭𝓮𝓶𝓸𝓵𝓲𝓷𝓴.𝓸𝓻𝓰</a> </li>
+      </ul>
+    </div>
+
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2">𝓞𝓟𝓔𝓝𝓘𝓝𝓖 𝓗𝓞𝓤𝓡𝓢</li>
+        <li> <a href="main2.html" class="text-decoration-none text-white">𝓜𝓸𝓷𝓭𝓪𝔂 – 𝓕𝓻𝓲𝓭𝓪𝔂: 9𝓪𝓶–6𝓹𝓶</a> </li>
+        <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓪𝓽𝓾𝓻𝓭𝓪𝔂: 10𝓪𝓶–4𝓹𝓶𝓹</a> </li>
+        <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓾𝓷𝓭𝓪𝔂: 10𝓪𝓶–1𝓹𝓶</a> </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center pt-2">
+      <p>&copy; 2023𝓒𝓸𝓹𝔂𝓻𝓲𝓰𝓱𝓽 <a href="#" class="text-white">𝓓𝓞𝓑𝓤 𝓜𝓐𝓡𝓣𝓘𝓐𝓛 𝓐𝓡𝓣𝓢</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/9d892b4fd1.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

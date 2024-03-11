@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="privacy.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="container" style="margin-left : 3%; max-width:100%;">
+            <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Search..." />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+            <div class="contact-info ">
+                <div class="contact-info">
+                    <div class="contact-info">
+                        <div class="phone-info">
+                            <a href="https://wa.me/1234567890">
+                                <img src="imgs/o6.png" alt="WhatsApp Call Icon">
+                            </a>
+                            <span>09770386642</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-info">
+                    <a href="https://maps.google.com/maps?q=123%20Main%20Street,%20City,%20Country" target="_blank" rel="noopener noreferrer">
+                        <img src="imgs/o7.png" alt="Location Icon">
+                    </a>
+                    <span>123 𝙈𝙖𝙞𝙣 𝙎𝙩𝙧𝙚𝙚𝙩, 𝘾𝙞𝙩𝙮, 𝘾𝙤𝙪𝙣𝙩𝙧𝙮</span>
+                </div>
+            </div>
+            <div class="location-info">
+                <a href="signup.html" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/logo.png" alt="Location Icon">
+                </a>
+                <span>𝓢𝓲𝓰𝓷 𝓤𝓹</span>
+            </div>
+        </div>
+
+
+        <div class="container" >
+            <div class="logo">
+                <img src="imgs/ok.png" alt="Dobu Logo">
+                <h1>» 𝔴ᵉᒪⒸᵒ𝓂€ 𝓽𝓞 Đ𝕆𝓫𝓊 м𝕒ᖇ𝓉𝐢𝓪𝕝 ÃяⓉ𝓢! «</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li class="dropdown">
+                    <a href="index.html">𝓗𝓞𝓜𝓔</a>
+                    <ul class="dropdown-content">
+                        <li><a href="main2.html">𝓢𝓒𝓗𝓔𝓓𝓤𝓛𝓔</a></li>
+                        <li><a href="contact.html">𝓒𝓞𝓝𝓣𝓐𝓒𝓣</a></li>
+                    </ul>
+                </li>
+                <li><a href="main1.html">𝓒𝓛𝓐𝓢𝓢𝓔𝓢</a></li>
+                <li><a href="main3.html">𝓘𝓝𝓢𝓣𝓡𝓤𝓒𝓣𝓞𝓡𝓢</a></li>
+                <li><a href="specia4l.html">𝓜𝓔𝓜𝓑𝓔𝓡𝓢𝓗𝓘𝓟𝓢</a></li>
+                <li class="dropdown">
+                    <a href="#">𝓜𝓞𝓡𝓔</a>
+                    <ul class="dropdown-content">
+                        <li><a href="dobu.html">𝓕𝓐𝓒𝓘𝓛𝓘𝓣𝓘𝓔𝓢</a></li>
+                        <li><a href="privacy.html">𝓐𝓑𝓞𝓤𝓣</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/your_facebook_page_url" target="_blank">
+                <img src="imgs/o1.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/i/flow/login" target="_blank">
+                <img src="imgs/o2.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="imgs/03.png" alt="instagram">
+            </a>
+            <a href="https://www.google.com/" target="_blank">
+                <img src="imgs/o4.png" alt="google">
+            </a>
+        </div>
+
+    </nav>
+            <main>
+                <section class="hero">
+                    <h2>𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝓓𝓸𝓑𝓾 𝓜𝓪𝓻𝓽𝓲𝓪𝓵 𝓐𝓻𝓽𝓼s</h2>
+                    <p>𝕁𝕠𝕚𝕟 𝕦𝕤 𝕥𝕠 𝕝𝕖𝕒𝕣𝕟 𝕤𝕖𝕝𝕗-𝕕𝕖𝕗𝕖𝕟𝕤𝕖, 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤, 𝕒𝕟𝕕 𝕤𝕥𝕒𝕪 𝕗𝕚𝕥!</p>
+                    <a href="#about">𝓛𝓮𝓪𝓻𝓷 𝓜𝓸𝓻𝓮</a>
+                </section>
+
+                <section id="about" class="about">
+                    <h2>𝓐𝓫𝓸𝓾𝓽 𝓤𝓼</h2>
+                    <p>𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕥𝕠 𝔻𝕠𝔹𝕦 𝕄𝕒𝕣𝕥𝕚𝕒𝕝 𝔸𝕣𝕥𝕤, 𝕨𝕙𝕖𝕣𝕖 𝕡𝕒𝕤𝕤𝕚𝕠𝕟 𝕞𝕖𝕖𝕥𝕤 𝕕𝕚𝕤𝕔𝕚𝕡𝕝𝕚𝕟𝕖 𝕒𝕟𝕕 𝕖𝕩𝕔𝕖𝕝𝕝𝕖𝕟𝕔𝕖 𝕚𝕟 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘. 𝕎𝕖 𝕒𝕣𝕖 𝕒 𝕡𝕣𝕖𝕞𝕚𝕖𝕣 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕘𝕪𝕞 𝕕𝕖𝕕𝕚𝕔𝕒𝕥𝕖𝕕 𝕥𝕠 𝕡𝕣𝕠𝕧𝕚𝕕𝕚𝕟𝕘 𝕥𝕠𝕡-𝕟𝕠𝕥𝕔𝕙 𝕚𝕟𝕤𝕥𝕣𝕦𝕔𝕥𝕚𝕠𝕟 𝕚𝕟 𝕧𝕒𝕣𝕚𝕠𝕦𝕤 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕕𝕚𝕤𝕔𝕚𝕡𝕝𝕚𝕟𝕖𝕤, 𝕗𝕚𝕥𝕟𝕖𝕤𝕤 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘, 𝕒𝕟𝕕 𝕤𝕖𝕝𝕗-𝕕𝕖𝕗𝕖𝕟𝕤𝕖 𝕔𝕠𝕦𝕣𝕤𝕖𝕤. 𝕆𝕦𝕣 𝕞𝕚𝕤𝕤𝕚𝕠𝕟 𝕚𝕤 𝕥𝕠 𝕖𝕞𝕡𝕠𝕨𝕖𝕣 𝕚𝕟𝕕𝕚𝕧𝕚𝕕𝕦𝕒𝕝𝕤 𝕠𝕗 𝕒𝕝𝕝 𝕒𝕘𝕖𝕤 𝕒𝕟𝕕 𝕤𝕜𝕚𝕝𝕝 𝕝𝕖𝕧𝕖𝕝𝕤 𝕥𝕠 𝕣𝕖𝕒𝕔𝕙 𝕥𝕙𝕖𝕚𝕣 𝕗𝕦𝕝𝕝 𝕡𝕠𝕥𝕖𝕟𝕥𝕚𝕒𝕝 𝕓𝕪 𝕗𝕠𝕤𝕥𝕖𝕣𝕚𝕟𝕘 𝕡𝕙𝕪𝕤𝕚𝕔𝕒𝕝 𝕗𝕚𝕥𝕟𝕖𝕤𝕤, 𝕞𝕖𝕟𝕥𝕒𝕝 𝕤𝕥𝕣𝕖𝕟𝕘𝕥𝕙, 𝕒𝕟𝕕 𝕤𝕖𝕝𝕗-𝕔𝕠𝕟𝕗𝕚𝕕𝕖𝕟𝕔𝕖.</p>
+                </section>
+
+                <section class="image-gallery">
+                    <div class="image">
+                        <img src="imgs/t1.png" alt="Image 1">
+                        <p>𝓞𝓾𝓻 𝓣𝓻𝓪𝓲𝓷𝓲𝓷𝓰</p>
+                       <p>𝔸𝕥 𝔻𝕠𝔹𝕦 𝕄𝕒𝕣𝕥𝕚𝕒𝕝 𝔸𝕣𝕥𝕤, 𝕨𝕖 𝕠𝕗𝕗𝕖𝕣 𝕒 𝕕𝕚𝕧𝕖𝕣𝕤𝕖 𝕣𝕒𝕟𝕘𝕖 𝕠𝕗 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕔𝕝𝕒𝕤𝕤𝕖𝕤, 𝕔𝕒𝕣𝕖𝕗𝕦𝕝𝕝𝕪 𝕥𝕒𝕚𝕝𝕠𝕣𝕖𝕕 𝕥𝕠 𝕔𝕒𝕥𝕖𝕣 𝕥𝕠 𝕕𝕚𝕗𝕗𝕖𝕣𝕖𝕟𝕥 𝕚𝕟𝕥𝕖𝕣𝕖𝕤𝕥𝕤 𝕒𝕟𝕕 𝕒𝕓𝕚𝕝𝕚𝕥𝕚𝕖𝕤. 𝕎𝕙𝕖𝕥𝕙𝕖𝕣 𝕪𝕠𝕦'𝕣𝕖 𝕒 𝕓𝕖𝕘𝕚𝕟𝕟𝕖𝕣 𝕥𝕒𝕜𝕚𝕟𝕘 𝕪𝕠𝕦𝕣 𝕗𝕚𝕣𝕤𝕥 𝕤𝕥𝕖𝕡𝕤 𝕚𝕟𝕥𝕠 𝕥𝕙𝕖 𝕨𝕠𝕣𝕝𝕕 𝕠𝕗 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕠𝕣 𝕒𝕟 𝕖𝕩𝕡𝕖𝕣𝕚𝕖𝕟𝕔𝕖𝕕 𝕡𝕣𝕒𝕔𝕥𝕚𝕥𝕚𝕠𝕟𝕖𝕣 𝕝𝕠𝕠𝕜𝕚𝕟𝕘 𝕥𝕠 𝕖𝕟𝕙𝕒𝕟𝕔𝕖 𝕪𝕠𝕦𝕣 𝕤𝕜𝕚𝕝𝕝𝕤, 𝕠𝕦𝕣 𝕖𝕩𝕡𝕖𝕣𝕥 𝕚𝕟𝕤𝕥𝕣𝕦𝕔𝕥𝕠𝕣𝕤 𝕒𝕣𝕖 𝕙𝕖𝕣𝕖 𝕥𝕠 𝕘𝕦𝕚𝕕𝕖 𝕒𝕟𝕕 𝕚𝕟𝕤𝕡𝕚𝕣𝕖 𝕪𝕠𝕦 𝕠𝕟 𝕪𝕠𝕦𝕣 𝕛𝕠𝕦𝕣𝕟𝕖𝕪.</p>
+                    </div>
+                    <div class="image">
+                        <img src="imgs/t2.png" alt="Image 2">
+                        <p>𝓜𝓪𝓻𝓽𝓲𝓪𝓵 𝓐𝓻𝓽𝓼 𝓒𝓵𝓪𝓼𝓼𝓮𝓼</p>
+                       <p>𝕆𝕦𝕣 𝕘𝕪𝕞 𝕓𝕠𝕒𝕤𝕥𝕤 𝕒𝕟 𝕚𝕞𝕡𝕣𝕖𝕤𝕤𝕚𝕧𝕖 𝕞𝕒𝕥𝕥𝕖𝕕 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕒𝕣𝕖𝕒 𝕨𝕙𝕖𝕣𝕖 𝕤𝕥𝕦𝕕𝕖𝕟𝕥𝕤 𝕔𝕒𝕟 𝕡𝕒𝕣𝕥𝕒𝕜𝕖 𝕚𝕟 𝕧𝕒𝕣𝕚𝕠𝕦𝕤 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕕𝕚𝕤𝕔𝕚𝕡𝕝𝕚𝕟𝕖𝕤, 𝕚𝕟𝕔𝕝𝕦𝕕𝕚𝕟𝕘 𝕂𝕒𝕣𝕒𝕥𝕖, 𝕋𝕒𝕖𝕜𝕨𝕠𝕟𝕕𝕠, 𝕁𝕚𝕦-𝕁𝕚𝕥𝕤𝕦, 𝕄𝕦𝕒𝕪 𝕋𝕙𝕒𝕚, 𝕒𝕟𝕕 𝕞𝕠𝕣𝕖. 𝔼𝕒𝕔𝕙 𝕔𝕝𝕒𝕤𝕤 𝕚𝕤 𝕕𝕖𝕤𝕚𝕘𝕟𝕖𝕕 𝕥𝕠 𝕥𝕖𝕒𝕔𝕙 𝕖𝕤𝕤𝕖𝕟𝕥𝕚𝕒𝕝 𝕥𝕖𝕔𝕙𝕟𝕚𝕢𝕦𝕖𝕤, 𝕤𝕖𝕝𝕗-𝕕𝕚𝕤𝕔𝕚𝕡𝕝𝕚𝕟𝕖, 𝕒𝕟𝕕 𝕣𝕖𝕤𝕡𝕖𝕔𝕥 𝕨𝕙𝕚𝕝𝕖 𝕡𝕣𝕠𝕞𝕠𝕥𝕚𝕟𝕘 𝕡𝕙𝕪𝕤𝕚𝕔𝕒𝕝 𝕗𝕚𝕥𝕟𝕖𝕤𝕤 𝕒𝕟𝕕 𝕞𝕖𝕟𝕥𝕒𝕝 𝕗𝕠𝕔𝕦𝕤.</p>
+                    </div>
+                    <div class="image">
+                        <img src="imgs/wow7.png" alt="Image 3">
+                        <p>𝓕𝓲𝓽𝓷𝓮𝓼𝓼 𝓣𝓻𝓪𝓲𝓷𝓲𝓷𝓰</p>
+                       <p>𝕀𝕟 𝕒𝕕𝕕𝕚𝕥𝕚𝕠𝕟 𝕥𝕠 𝕠𝕦𝕣 𝕞𝕒𝕣𝕥𝕚𝕒𝕝 𝕒𝕣𝕥𝕤 𝕔𝕝𝕒𝕤𝕤𝕖𝕤, 𝕨𝕖 𝕠𝕗𝕗𝕖𝕣 𝕤𝕥𝕒𝕥𝕖-𝕠𝕗-𝕥𝕙𝕖-𝕒𝕣𝕥 𝕗𝕚𝕥𝕟𝕖𝕤𝕤 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘 𝕡𝕣𝕠𝕘𝕣𝕒𝕞𝕤 𝕥𝕠 𝕙𝕖𝕝𝕡 𝕪𝕠𝕦 𝕒𝕔𝕙𝕚𝕖𝕧𝕖 𝕪𝕠𝕦𝕣 𝕙𝕖𝕒𝕝𝕥𝕙 𝕒𝕟𝕕 𝕨𝕖𝕝𝕝𝕟𝕖𝕤𝕤 𝕘𝕠𝕒𝕝𝕤. 𝕎𝕙𝕖𝕥𝕙𝕖𝕣 𝕪𝕠𝕦'𝕣𝕖 𝕝𝕠𝕠𝕜𝕚𝕟𝕘 𝕥𝕠 𝕓𝕦𝕚𝕝𝕕 𝕤𝕥𝕣𝕖𝕟𝕘𝕥𝕙, 𝕚𝕞𝕡𝕣𝕠𝕧𝕖 𝕗𝕝𝕖𝕩𝕚𝕓𝕚𝕝𝕚𝕥𝕪, 𝕠𝕣 𝕚𝕟𝕔𝕣𝕖𝕒𝕤𝕖 𝕠𝕧𝕖𝕣𝕒𝕝𝕝 𝕖𝕟𝕕𝕦𝕣𝕒𝕟𝕔𝕖, 𝕠𝕦𝕣 𝕗𝕚𝕥𝕟𝕖𝕤𝕤 𝕚𝕟𝕤𝕥𝕣𝕦𝕔𝕥𝕠𝕣𝕤 𝕨𝕚𝕝𝕝 𝕕𝕖𝕤𝕚𝕘𝕟 𝕡𝕖𝕣𝕤𝕠𝕟𝕒𝕝𝕚𝕫𝕖𝕕 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘 𝕡𝕝𝕒𝕟𝕤 𝕥𝕠 𝕤𝕦𝕚𝕥 𝕪𝕠𝕦𝕣 𝕟𝕖𝕖𝕕𝕤.
+                       </p>
+                    </div>
+                    <div class="image">
+                        <img src="imgs/t4.png" alt="Image 3">
+                        <p>𝓢𝓮𝓵𝓯-𝓓𝓮𝓯𝓮𝓷𝓼𝓮 𝓒𝓸𝓾𝓻𝓼𝓮𝓼
+                        </p>
+                        <p>𝕊𝕒𝕗𝕖𝕥𝕪 𝕒𝕟𝕕 𝕤𝕖𝕝𝕗-𝕔𝕠𝕟𝕗𝕚𝕕𝕖𝕟𝕔𝕖 𝕒𝕣𝕖 𝕔𝕣𝕦𝕔𝕚𝕒𝕝 𝕚𝕟 𝕥𝕠𝕕𝕒𝕪'𝕤 𝕨𝕠𝕣𝕝𝕕. 𝕆𝕦𝕣 𝕤𝕖𝕝𝕗-𝕕𝕖𝕗𝕖𝕟𝕤𝕖 𝕔𝕠𝕦𝕣𝕤𝕖𝕤 𝕒𝕣𝕖 𝕤𝕡𝕖𝕔𝕚𝕒𝕝𝕝𝕪 𝕕𝕖𝕤𝕚𝕘𝕟𝕖𝕕 𝕥𝕠 𝕖𝕢𝕦𝕚𝕡 𝕪𝕠𝕦 𝕨𝕚𝕥𝕙 𝕖𝕤𝕤𝕖𝕟𝕥𝕚𝕒𝕝 𝕤𝕜𝕚𝕝𝕝𝕤 𝕒𝕟𝕕 𝕤𝕥𝕣𝕒𝕥𝕖𝕘𝕚𝕖𝕤 𝕥𝕠 𝕡𝕣𝕠𝕥𝕖𝕔𝕥 𝕪𝕠𝕦𝕣𝕤𝕖𝕝𝕗 𝕒𝕟𝕕 𝕠𝕥𝕙𝕖𝕣𝕤 𝕚𝕟 𝕣𝕖𝕒𝕝-𝕝𝕚𝕗𝕖 𝕤𝕚𝕥𝕦𝕒𝕥𝕚𝕠𝕟𝕤. 𝕃𝕖𝕒𝕣𝕟 𝕡𝕣𝕒𝕔𝕥𝕚𝕔𝕒𝕝 𝕥𝕖𝕔𝕙𝕟𝕚𝕢𝕦𝕖𝕤 𝕒𝕟𝕕 𝕘𝕒𝕚𝕟 𝕥𝕙𝕖 𝕔𝕠𝕟𝕗𝕚𝕕𝕖𝕟𝕔𝕖 𝕥𝕠 𝕟𝕒𝕧𝕚𝕘𝕒𝕥𝕖 𝕔𝕙𝕒𝕝𝕝𝕖𝕟𝕘𝕚𝕟𝕘 𝕤𝕔𝕖𝕟𝕒𝕣𝕚𝕠𝕤 𝕨𝕚𝕥𝕙 𝕖𝕒𝕤𝕖.</p>
+                    </div>
+                    <div class="image">
+                        <img src="imgs/t5.png" alt="Image 3">
+                        <p>𝓞𝓾𝓻 𝓕𝓪𝓬𝓲𝓵𝓲𝓽𝓲𝓮𝓼
+                        </p>
+                       <p>𝔸𝕥 𝔻𝕠𝔹𝕦 𝕄𝕒𝕣𝕥𝕚𝕒𝕝 𝔸𝕣𝕥𝕤, 𝕨𝕖 𝕓𝕖𝕝𝕚𝕖𝕧𝕖 𝕥𝕙𝕒𝕥 𝕒 𝕔𝕠𝕞𝕗𝕠𝕣𝕥𝕒𝕓𝕝𝕖 𝕒𝕟𝕕 𝕨𝕖𝕝𝕔𝕠𝕞𝕚𝕟𝕘 𝕖𝕟𝕧𝕚𝕣𝕠𝕟𝕞𝕖𝕟𝕥 𝕚𝕤 𝕖𝕤𝕤𝕖𝕟𝕥𝕚𝕒𝕝 𝕗𝕠𝕣 𝕠𝕡𝕥𝕚𝕞𝕒𝕝 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘 𝕒𝕟𝕕 𝕡𝕖𝕣𝕤𝕠𝕟𝕒𝕝 𝕘𝕣𝕠𝕨𝕥𝕙. 𝕆𝕦𝕣 𝕘𝕪𝕞 𝕚𝕤 𝕖𝕢𝕦𝕚𝕡𝕡𝕖𝕕 𝕨𝕚𝕥𝕙 𝕔𝕦𝕥𝕥𝕚𝕟𝕘-𝕖𝕕𝕘𝕖 𝕗𝕒𝕔𝕚𝕝𝕚𝕥𝕚𝕖𝕤 𝕥𝕠 𝕖𝕟𝕤𝕦𝕣𝕖 𝕪𝕠𝕦 𝕙𝕒𝕧𝕖 𝕖𝕧𝕖𝕣𝕪𝕥𝕙𝕚𝕟𝕘 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 𝕗𝕠𝕣 𝕒 𝕣𝕖𝕨𝕒𝕣𝕕𝕚𝕟𝕘 𝕖𝕩𝕡𝕖𝕣𝕚𝕖𝕟𝕔𝕖:</p>
+                    </div>
+
+                    <div class="image">
+                        <img src="imgs/t6.png" alt="Image 3">
+                        <p>𝓢𝓪𝓾𝓷𝓪 𝓪𝓷𝓭 𝓢𝓽𝓮𝓪𝓶 𝓡𝓸𝓸𝓶</p>
+                       <p>𝔸𝕗𝕥𝕖𝕣 𝕒𝕟 𝕚𝕟𝕥𝕖𝕟𝕤𝕖 𝕨𝕠𝕣𝕜𝕠𝕦𝕥 𝕠𝕣 𝕥𝕣𝕒𝕚𝕟𝕚𝕟𝕘 𝕤𝕖𝕤𝕤𝕚𝕠𝕟, 𝕥𝕒𝕜𝕖 𝕒𝕕𝕧𝕒𝕟𝕥𝕒𝕘𝕖 𝕠𝕗 𝕠𝕦𝕣 𝕣𝕖𝕝𝕒𝕩𝕚𝕟𝕘 𝕤𝕒𝕦𝕟𝕒 𝕒𝕟𝕕 𝕤𝕥𝕖𝕒𝕞 𝕣𝕠𝕠𝕞 𝕗𝕒𝕔𝕚𝕝𝕚𝕥𝕚𝕖𝕤. 𝕌𝕟𝕨𝕚𝕟𝕕, 𝕕𝕖-𝕤𝕥𝕣𝕖𝕤𝕤, 𝕒𝕟𝕕 𝕣𝕖𝕛𝕦𝕧𝕖𝕟𝕒𝕥𝕖 𝕪𝕠𝕦𝕣 𝕓𝕠𝕕𝕪 𝕒𝕟𝕕 𝕞𝕚𝕟𝕕.</p>
+                    </div>
+                </section>
+            </main>
+
+
+
+    <div class="container">
+        <h1>𝓖𝓮𝓽 𝓪𝓵𝓵 𝓽𝓱𝓮 𝓼𝓹𝓮𝓬𝓲𝓪𝓵 𝓸𝓯𝓯𝓮𝓻𝓼
+            𝓫𝔂 𝓼𝓲𝓰𝓷𝓲𝓷𝓰 𝓾𝓹 𝓯𝓸𝓻 𝓪 𝓷𝓮𝔀𝓼𝓵𝓮𝓽𝓽𝓮𝓻!</h1>
+        <form id="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter your email" required>
+            <button type="submit" id="subscribe-btn">Subscribe</button>
+        </form>
+        <p id="success-message">Thank you for subscribing!</p>
+    </div>
+
+</header>
+<div class="container-fluid  text-white p-3" style="background: rgb(45, 51, 46);">
+    <div class="row justify-content-around text-center text-md-start">
+        <div class="col-md-2 text-center">
+            <a href="#" class="logo" style="color: white; font-size: 20px;"><img src="imgs/ok.png" width="90px"></a>
+        </div>
+        <div class="col-md-2">
+            <ul class="list-unstyled">
+                <li class="fw-bold my-2">𝓞𝓤𝓡 𝓓𝓞𝓒𝓤𝓜𝓔𝓝𝓣𝓢</li>
+                <li> <a href="policy.html" class="text-decoration-none text-white">𝓟𝓻𝓲𝓿𝓪𝓬𝔂 𝓟𝓸𝓵𝓲𝓬𝔂</a> </li>
+                <li> <a href="policy.html" class="text-decoration-none text-white">𝓘𝓷𝓯𝓸𝓻𝓶𝓪𝓽𝓲𝓸𝓷 𝓦𝓮 𝓒𝓸𝓵𝓵𝓮𝓬𝓽:</a> </li>
+                <li> <a href="policy.html" class="text-decoration-none text-white">𝓒𝓱𝓲𝓵𝓭𝓻𝓮𝓷'𝓼 𝓟𝓻𝓲𝓿𝓪𝓬𝔂:</a> </li>
+
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul class="list-unstyled">
+                <li class="fw-bold my-2">𝓝𝓐𝓥𝓘𝓖𝓐𝑇𝓘𝓞𝓝</li>
+                <li> <a href="privacy.html" class="text-decoration-none text-white">𝓐𝓑𝓞𝓤𝓣</a> </li>
+                <li> <a href="specia4l.html" class="text-decoration-none text-white">𝓒𝓛𝓐𝓢𝓢𝓔𝓢</a> </li>
+                <li> <a href="main3.html" class="text-decoration-none text-white">𝓘𝓝𝓢𝓣𝓡𝓤𝓒𝓣𝓞𝓡𝓢</a> </li>
+                <li> <a href="main1.html" class="text-decoration-none text-white">𝓜𝓔𝓜𝓑𝓔𝓡𝓢𝓗𝓘𝓟𝓢</a> </li>
+                <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓒𝓗𝓔𝓓𝓤𝓛𝓔</a> </li>
+                <li> <a href="dobu.html" class="text-decoration-none text-white">𝓕𝓐𝓒𝓘𝓛𝓘𝓣𝓘𝓔𝓢</a> </li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul class="list-unstyled">
+                <li class="fw-bold my-2">𝓒𝓞𝓝𝓣𝓐𝓒𝓣 𝓘𝓝𝓕𝓞</li>
+                <li> <a href="contact.html" class="text-decoration-none text-white">096 𝓝 𝓗𝓲𝓰𝓱𝓵𝓪𝓷𝓭 𝓢𝓽, 𝓐𝓻𝓵𝓲𝓷𝓰𝓽𝓸𝓷
+                    𝓥𝓐 32101, 𝓤𝓢𝓐</a> </li>
+                <li> <a href="contact.html" class="text-decoration-none text-white">𝓽𝓸𝔂𝓸𝓾23@𝓭𝓮𝓶𝓸𝓵𝓲𝓷𝓴.𝓸𝓻𝓰</a> </li>
+            </ul>
+        </div>
+
+        <div class="col-md-2">
+            <ul class="list-unstyled">
+                <li class="fw-bold my-2">𝓞𝓟𝓔𝓝𝓘𝓝𝓖 𝓗𝓞𝓤𝓡𝓢</li>
+                <li> <a href="main2.html" class="text-decoration-none text-white">𝓜𝓸𝓷𝓭𝓪𝔂 – 𝓕𝓻𝓲𝓭𝓪𝔂: 9𝓪𝓶–6𝓹𝓶</a> </li>
+                <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓪𝓽𝓾𝓻𝓭𝓪𝔂: 10𝓪𝓶–4𝓹𝓶𝓹</a> </li>
+                <li> <a href="main2.html" class="text-decoration-none text-white">𝓢𝓾𝓷𝓭𝓪𝔂: 10𝓪𝓶–1𝓹𝓶</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center pt-2">
+            <p>&copy; 2023𝓒𝓸𝓹𝔂𝓻𝓲𝓰𝓱𝓽 <a href="#" class="text-white">𝓓𝓞𝓑𝓤 𝓜𝓐𝓡𝓣𝓘𝓐𝓛 𝓐𝓡𝓣𝓢</a></p>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/9d892b4fd1.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

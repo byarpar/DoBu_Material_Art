@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="table.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>User Data Table</title>
+  <style>
+
+  body {
+      background-image: url('imgs/wowow.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: #000;
+    }
+
+
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 2px solid #333333;
+    }
+
+    th {
+      background-color: #CDDC39;
+      color: #333333;
+      border: 1px solid #333333;
+    }
+
+    td {
+      border: 2px solid #333333;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="color: red;" >
+<div class="container" style="text-align: right;">
+  <h1 style="text-align: center;">𝓤𝓼𝓮𝓻 𝓓𝓪𝓽𝓪 𝓣𝓪𝓫𝓵𝓮</h1>
+  <table id="userData">
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Phone Number</th>
+      <th>Martial Art</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <button id="addButton" style="color: black; width: 170px; height: 40px;">Add</button>
+
+
+</div>
+<script>
+  $(document).ready(function () {
+    const tableBody = $("#userData tbody");
+    let allFormData = JSON.parse(localStorage.getItem("allFormData")) || [];
+
+    function updateTable() {
+      tableBody.empty();
+      $.each(allFormData, function (index, formData) {
+        const row = $("<tr>");
+
+        const fields = ["username", "email", "gender", "age", "phone", "martialArt"];
+        $.each(fields, function (_, field) {
+          const cell = $("<td>").text(formData[field]);
+          row.append(cell);
+        });
+
+        const actionsCell = $("<td>");
+        const deleteButton = createButton("Delete", function () {
+          deleteFormData(index);
+        });
+        const editButton = createButton("Edit", function () {
+          editFormData(index);
+        });
+        actionsCell.append(deleteButton).append(editButton);
+        row.append(actionsCell);
+
+        tableBody.append(row);
+      });
+    }
+
+    function createButton(text, onClick) {
+      return $("<button>")
+        .text(text)
+        .on("click", onClick);
+    }
+
+    function deleteFormData(index) {
+      allFormData.splice(index, 1);
+      saveFormData();
+      updateTable();
+    }
+
+    function editFormData(index) {
+      const formData = allFormData[index];
+      const updatedFormData = { ...formData };
+      const fields = ["username", "email", "gender", "age", "phone", "martialArt"];
+      $.each(fields, function (_, field) {
+        const updatedValue = prompt(`Enter updated ${field}:`, formData[field]);
+        if (updatedValue !== null) {
+          updatedFormData[field] = updatedValue;
+        }
+      });
+      allFormData[index] = updatedFormData;
+      saveFormData();
+      updateTable();
+    }
+
+    function saveFormData() {
+      localStorage.setItem("allFormData", JSON.stringify(allFormData));
+    }
+
+    // Add button functionality
+    $("#addButton").click(function () {
+      const newFormData = {};
+      const fields = ["username", "email", "gender", "age", "phone", "martialArt"];
+      $.each(fields, function (_, field) {
+        const value = prompt(`Enter ${field}:`);
+        if (value !== null) {
+          newFormData[field] = value;
+        }
+      });
+      allFormData.push(newFormData);
+      saveFormData();
+      updateTable();
+    });
+
+    updateTable();
+  });
+</script>
+
+</body>
+</html>
