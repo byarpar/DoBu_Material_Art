@@ -1,0 +1,38 @@
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+
+tr:hover {
+    background-color: yellow;
+}
+
+#addButton {
+    color: white;
+    background-color: yellow;
+    width: 170px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  /* Apply a color change and scale effect on hover */
+  #addButton:hover {
+    background-color: white;
+    transform: scale(1.05);
+  }
+

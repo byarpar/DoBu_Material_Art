@@ -1,0 +1,59 @@
+.about-gym {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gym-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.about-gym h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-gym p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.about-gym {
+  /* Add any styling for the section here */
+}
+
+.instructors-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instructors-list li {
+  margin-bottom: 15px;
+}
+
+.instructors-list strong {
+  font-size: 1.2rem;
+}
+
+.instructors-list li span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.container {
+  position: relative;
+  /* Set container height if needed */
+  height: 300px;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add any additional styling for the text if needed */
+}

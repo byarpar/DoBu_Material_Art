@@ -1,0 +1,126 @@
+body, html {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 16px;
+}
+.siteTitle {
+  display: block;
+  font-weight: 900;
+  font-size: 30px;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .siteTitle {
+    font-size: 60px;
+  }
+}
+
+
+.card {
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #b0215e;
+  margin-bottom: 20px;
+  background-image: url('imgs/Untitled (36).png');
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .card {
+    height: 500px;
+  }
+}
+.inner {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  padding: 40px;
+}
+@media (min-width: 768px) {
+  .inner {
+    width: 50%;
+    height: 100%;
+  }
+}
+.title {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  color: #181818;
+  text-shadow: 0px 2px 2px #a6f8d5;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+.subtitle {
+  color: #b0215e;
+  text-align: center;
+}
+.card2 {
+  background-image: url('imgs/ok2.png');
+}
+.card3 {
+  background-image: url('imgs/Untitled (40).png');
+}
+.card4 {
+  background-image: url('imgs/Untitled (42).png');
+}
+.card5 {
+  background-image: url('imgs/Untitled (44).png');
+}
+.card6 {
+  background-image: url('imgs/inst.png');
+}
+.card7 {
+  background-image: url('imgs/ok1.png');
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.footerLink {
+  margin-right: 12px;
+  color: #181818;
+  text-decoration: none;
+  position: relative;
+}
+.footerLink:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(176, 33, 94, 0.3);
+  left: 0;
+  bottom: 0;
+}
+.footerLink:last-child {
+  margin-right: 0;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.siteTitle {
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+}
